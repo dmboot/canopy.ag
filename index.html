@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canopy.ag | Coming Soon</title>
+    <title>Canopy.ag | Autonomous Harvesting</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen">
-    <div class="text-center p-8 max-w-2xl">
-        
-        <div class="mb-8 flex justify-center">
-            <img src="logo.jpeg" alt="Startup Logo" class="h-24 w-auto rounded-xl shadow-lg">
-        </div>
+<body class="bg-[#143525] text-white min-h-screen font-sans">
 
-        <h1 class="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            On-demand autonomous harvesting
-        </h1>
-        <p class="text-slate-400 text-xl mb-8">
-            The future of agriculture is almost here. Join the private beta.
-        </p>
-        
-        <div class="flex gap-2 justify-center">
-            <input type="email" placeholder="Enter your email" class="px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500 w-64 text-white">
-            <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">
-                Notify Me
-            </button>
+    <header class="p-6 md:p-8 flex items-center gap-4">
+        <img src="logo.jpeg" alt="Canopy Logo" class="h-10 md:h-12 w-auto rounded-lg text-green-300">
+        <div class="text-2xl md:text-3xl font-bold tracking-tight">Canopy.ag</div>
+    </header>
+
+    <main class="flex items-center justify-center pt-16 md:pt-24 px-6">
+        <div class="text-center max-w-4xl">
+            
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-8 leading-tight bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                on demand autonomous harvesting
+            </h1>
+
+            <p class="text-slate-300 text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                The future of agriculture is almost here. We're launching Canopy.ag soon. Join the private beta for early access.
+            </p>
+            
+            <form action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <input type="email" name="email" required placeholder="Enter your work email" class="px-6 py-4 rounded-xl bg-black/20 border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-full sm:w-80 text-white text-lg placeholder:text-slate-500">
+                <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition duration-150 shadow-md">
+                    Request Beta Access
+                </button>
+            </form>
         </div>
-    </div>
+    </main>
+
 </body>
 </html>
