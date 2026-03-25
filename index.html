@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Canopy.ag | Autonomous Harvesting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <img src="Vierkant logo+tekst_nobg.png" alt="Logo" />
-        <img src="Banner_nobg.png" alt="Header Banner" />
+<body class="bg-[#0e2319] text-white min-h-screen font-sans">
+
+    <header class="relative p-6 md:p-8">
+        <img src="Vierkant logo+tekst_nobg.png" alt="Canopy Logo" class="absolute top-6 left-6 h-16 md:h-20 w-auto rounded-lg z-10">
+        <div class="flex justify-center">
+            <img src="Banner_nobg.png" alt="Canopy Header" class="h-64 md:h-80 w-auto rounded-lg">
+        </div>
     </header>
-    <main>
-        <h1>Welcome to Your Website</h1>
-        <p>This is a sample webpage.</p>
+
+    <main class="flex items-center justify-center pt-8 md:pt-12 px-6">
+        <div class="text-center max-w-4xl">
+            
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 text-emerald-400">
+                on demand autonomous harvesting
+            </h2>
+
+            <p class="text-slate-300 text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
+                The future of agriculture is almost here. We're launching Canopy.ag soon. Join the private beta for early access.
+            </p>
+            
+            <form action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <input type="email" name="email" required placeholder="Enter your work email" class="px-6 py-4 rounded-xl bg-black/20 border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-500 w-full sm:w-80 text-white text-lg placeholder:text-slate-500">
+                <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition duration-150 shadow-md">
+                    Request Beta Access
+                </button>
+            </form>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2026 Your Company</p>
-    </footer>
+
 </body>
 </html>
